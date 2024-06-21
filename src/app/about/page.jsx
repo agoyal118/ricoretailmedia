@@ -9,7 +9,7 @@ import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
+import imageConnorMirabelli from '@/images/team/connor-mirabelli.png'
 import imageEnricoMirabelli from '@/images/team/enrico-mirabelli.jpg'
 import imageMattMarneris from '@/images/team/matt-marneris.jpg'
 import imageArpitGoyal from '@/images/team/arpit-goyal.png'
@@ -70,7 +70,7 @@ const team = [
       {
         name: 'Connor Mirabelli',
         role: 'Account Coordinator',
-        image: { src: imageLeonardKrasner },
+        image: { src: imageConnorMirabelli },
       },
       {
         name: 'Arpit Goyal',
