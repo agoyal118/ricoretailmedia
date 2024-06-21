@@ -48,7 +48,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We work with great brands
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -235,7 +235,7 @@ export default async function Home() {
           <p className="mt-6 text-xl text-neutral-600">
             We operate as an extension of your team to help service and grow
             your business where it needs help today and can scale with you as
-            your business expands. We are the centralized team.
+            your business expands.
           </p>
         </FadeIn>
       </Container>
