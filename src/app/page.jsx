@@ -8,22 +8,13 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import logoKeyDark from '@/images/clients/logoKeyDark.png'
-import imageLaptop from '@/images/laptop.jpg'
+import imageAmazon from '@/images/homeAmazon.webp'
 import logoDude from '@/images/clients/logoDudeWhite.webp'
 import logoHBD from '@/images/clients/logoHBDTransparent.png'
 import logoRhone from '@/images/clients/logoRhoneWhite.png'
 import logoFillos from '@/images/clients/logoFillos.svg'
 import logoFDC from '@/images/clients/logoFDCDark.webp'
+import logoAN from '@/images/clients/logoANWhite.png'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
@@ -32,6 +23,7 @@ const clients = [
   ['Hustle Butter', logoHBD],
   [`Fillo's`, logoFillos],
   ['Fire Department Coffee', logoFDC],
+  ['Absolutely Natural', logoAN],
 ]
 
 const traditionalRetailers = [
@@ -84,7 +76,7 @@ function Marketplaces() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex justify-center gap-x-8">
-          <h3 className="text-center font-display text-sm font-semibold tracking-wider text-white underline sm:text-left">
+          <h3 className="text-center font-display text-lg tracking-wider text-white sm:text-left">
             Retailers and Marketplaces Supported
           </h3>
         </FadeIn>
@@ -137,16 +129,6 @@ function Marketplaces() {
 function CaseStudies({ caseStudies }) {
   return (
     <>
-      <SectionIntro
-        title="Harnessing technology for a brighter future"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p>
-      </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {caseStudies.map((caseStudy) => (
@@ -209,7 +191,7 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageLaptop}
+                src={imageAmazon}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
@@ -262,16 +244,6 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Key Sparkling Water', logo: logoKeyDark }}
-      >
-        Building a business is hard. This makes it even more important to
-        recognize the special parts of this journey. Being surrounded by great
-        people is necessary for success and an extreme force multiplier. We are
-        extremely excited to partner with Rico and Rico Retail Media to take
-        this brand to the next level and beyond.
-      </Testimonial>
       <Marketplaces />
       <Services />
 

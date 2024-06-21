@@ -9,19 +9,12 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import logoDude from '@/images/clients/logoDudeBlack.jpg'
 import logoHBD from '@/images/clients/logoHBDTransparent.png'
 import logoRhone from '@/images/clients/logoRhoneBlack.png'
 import logoFillos from '@/images/clients/logoFillos.svg'
 import logoFDC from '@/images/clients/logoFDCDark.webp'
+import logoAN from '@/images/clients/logoANDark.png'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 
@@ -102,6 +95,7 @@ const clients = [
   ['Hustle Butter', logoHBD],
   [`Fillo's`, logoFillos],
   ['Fire Department Coffee', logoFDC],
+  ['Absolutely Natural', logoAN],
 ]
 
 function Clients() {
@@ -144,14 +138,11 @@ export default async function Work() {
 
   return (
     <>
-      <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
-      >
+      <PageIntro eyebrow="Our work" title="We always drive results.">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          We have driven results for brands of different sizes from $5MM to
+          $100MM, in categories from Home & Household, Beauty, Apparel, and
+          Food.
         </p>
       </PageIntro>
 
@@ -161,8 +152,10 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoHBD }}
       >
-        We approached <em>Rico Retail</em> because we loved their past work.
-        They delivered something remarkably similar in record time.
+        We got referred to <em>Rico Retail</em> as we were looking to get
+        serious about Amazon. After meeting, it was clear they knew what we
+        wanted to do and how to do it—3 years later the Amazon business is
+        bigger tha nwe ever thought it could be.
       </Testimonial>
 
       <Clients />

@@ -10,7 +10,7 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'DudeWipes', href: '/work/dude' },
+      { title: 'Dude Wipes', href: '/work/dude' },
       { title: `Fillo's`, href: '/work/fillos' },
       { title: 'Hustle Butter', href: '/work/hustlebutter' },
       {
