@@ -19,8 +19,8 @@ export async function POST(req) {
     `
 
   const data = {
-    to: 'arpit@ricoretailmedia.com',
-    from: 'request@ricoretailmedia.com',
+    to: 'agoyal@ricoretailmedia.com',
+    from: 'contact@ricoretailmedia.com',
     subject: 'Website Contact Us Request',
     text: message,
     html: message.replace(/\r\n/g, '<br>'),
