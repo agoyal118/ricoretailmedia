@@ -16,6 +16,16 @@ import logoFillos from '@/images/clients/logoFillos.svg'
 import logoFDC from '@/images/clients/logoFDCDark.webp'
 import logoAN from '@/images/clients/logoANWhite.png'
 import { loadCaseStudies } from '@/lib/mdx'
+import logoCostco from '@/images/retailers/traditional/logoCostcoTrans.png'
+import logoKroger from '@/images/retailers/traditional/logoKrogerTrans.jpg'
+import logoMeijer from '@/images/retailers/traditional/logoMeijer.png'
+import logoSamsClub from '@/images/retailers/traditional/logoSamsClubTrans.png'
+import logoTarget from '@/images/retailers/traditional/logoTargetTrans.jpg'
+import logoWalmart from '@/images/retailers/traditional/logoWalmartTrans.jpg'
+import logoAmazon from '@/images/retailers/digital/logoAmazonTrans.jpg'
+import logoGopuff from '@/images/retailers/digital/logoGopuff.png'
+import logoInstacart from '@/images/retailers/digital/logoInstacart.png'
+import logoTiktok from '@/images/retailers/digital/logoTiktokTrans.png'
 
 const clients = [
   ['DudeWipes', logoDude],
@@ -27,19 +37,19 @@ const clients = [
 ]
 
 const traditionalRetailers = [
-  ['Walmart', logoDude],
-  ['Target', logoDude],
-  ['Kroger', logoDude],
-  [`Sam's Club`, logoDude],
-  ['Meijer', logoDude],
-  ['Costco', logoDude],
+  ['Walmart', logoWalmart],
+  ['Target', logoTarget],
+  ['Kroger', logoKroger],
+  [`Sam's Club`, logoSamsClub],
+  ['Meijer', logoMeijer],
+  ['Costco', logoCostco],
 ]
 
 const digitalRetailers = [
-  ['Amazon', logoDude],
-  ['TikTok', logoDude],
-  ['GoPuff', logoDude],
-  ['Instacart', logoDude],
+  ['Amazon', logoAmazon],
+  ['TikTok', logoTiktok],
+  ['GoPuff', logoGopuff],
+  ['Instacart', logoInstacart],
 ]
 
 function Clients() {
@@ -95,7 +105,7 @@ function Marketplaces() {
             {traditionalRetailers.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <p className="text-white">{client}</p>
+                  <Image src={logo} alt={client} unoptimized className="w-24" />
                 </FadeIn>
               </li>
             ))}
@@ -115,7 +125,7 @@ function Marketplaces() {
             {digitalRetailers.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <p className="text-white">{client}</p>
+                  <Image src={logo} alt={client} unoptimized className="w-24" />
                 </FadeIn>
               </li>
             ))}
