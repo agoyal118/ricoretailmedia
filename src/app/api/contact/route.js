@@ -19,7 +19,7 @@ export async function POST(req) {
     `
 
   const data = {
-    to: 'agoyal@ricoretailmedia.com',
+    to: 'rico@ricoretailmedia.com',
     from: 'contact@ricoretailmedia.com',
     subject: 'Website Contact Us Request',
     text: message,

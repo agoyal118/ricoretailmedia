@@ -1,5 +1,7 @@
-import { useId } from 'react'
+'use client'
+
 import Link from 'next/link'
+import { useState, useRef, useId } from 'react'
 
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
@@ -45,9 +47,56 @@ function RadioInput({ label, ...props }) {
 }
 
 function ContactForm() {
+  const [isClicked, setIsClicked] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const formRef = useRef(null)
+
+  const sendEmail = async (event) => {
+    event.preventDefault()
+    setIsClicked(true)
+    const formData = {}
+
+    Array.from(event.currentTarget.elements).forEach((field) => {
+      if (!field.name) return
+      formData[field.name] = field.value
+    })
+
+    if (formData.name.indexOf(' ') >= 0) {
+      formData['first_name'] = formData.name.substring(
+        0,
+        formData.name.indexOf(' '),
+      )
+      formData['last_name'] = formData.name.substring(
+        formData.name.lastIndexOf(' ') + 1,
+        formData.name.length,
+      )
+    } else {
+      formData['first_name'] = formData.name
+    }
+
+    try {
+      await fetch('/api/contact', {
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      })
+    } catch (error) {
+      console.error(error)
+      if (error.response) {
+        console.error(error.response.body)
+      }
+    }
+
+    setIsSubmitted(true)
+    formRef.current.reset()
+    //console.log('Triggered')
+  }
+
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form ref={formRef} onSubmit={sendEmail}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
@@ -78,8 +127,12 @@ function ContactForm() {
             </fieldset>
           </div>
         </div>
-        <Button type="submit" className="mt-10">
-          Let’s work together
+        <Button type="submit" className="mt-10" disabled={isClicked}>
+          {isSubmitted
+            ? 'Talk soon!'
+            : isClicked
+              ? 'Sending...'
+              : 'Let’s work together'}
         </Button>
       </form>
     </FadeIn>
@@ -123,10 +176,12 @@ function ContactDetails() {
   )
 }
 
+/*
 export const metadata = {
   title: 'Contact Us',
   description: 'Let’s work together. We can’t wait to hear from you.',
 }
+  */
 
 export default function Contact() {
   return (
