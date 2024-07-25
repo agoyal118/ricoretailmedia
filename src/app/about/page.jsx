@@ -64,7 +64,7 @@ const team = [
     people: [
       {
         name: 'Matt Marneris',
-        role: 'Business Relations',
+        role: 'Director',
         image: { src: imageMattMarneris },
       },
       {
@@ -74,7 +74,7 @@ const team = [
       },
       {
         name: 'Arpit Goyal',
-        role: 'Content Specialist',
+        role: 'Senior Analyst',
         image: { src: imageArpitGoyal },
       },
     ],
