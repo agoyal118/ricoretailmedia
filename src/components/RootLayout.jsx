@@ -22,6 +22,7 @@ import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 import rrm_logo from '@/images/rrm_logo.png'
+import rrm_logo_white from '@/images/rrm_logo_white.png'
 
 const RootLayoutContext = createContext(null)
 
@@ -62,7 +63,16 @@ function Header({
           onMouseLeave={() => setLogoHovered(false)}
           className="flex items-center justify-between"
         >
-          <Image src={rrm_logo} alt="RRM Logo" className="h-12 w-12" />
+          {invert ? (
+            <Image
+              src={rrm_logo_white}
+              alt="RRM Logo in White"
+              className="h-12 w-12"
+            />
+          ) : (
+            <Image src={rrm_logo} alt="RRM Logo" className="h-12 w-12" />
+          )}
+
           <div
             className={clsx(
               'text-l sm:text-3xl',
