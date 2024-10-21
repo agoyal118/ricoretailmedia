@@ -20,6 +20,8 @@ import logoCostco from '@/images/retailers/traditional/logoCostcoTrans.png'
 import logoKroger from '@/images/retailers/traditional/logoKroger.webp'
 import logoMeijer from '@/images/retailers/traditional/logoMeijer.png'
 import logoSamsClub from '@/images/retailers/traditional/logoSamsClub.png'
+import logoHannaford from '@/images/retailers/traditional/logoHannaford.png'
+import logoAlbertsons from '@/images/retailers/traditional/logoAlbertsons.png'
 import logoTarget from '@/images/retailers/traditional/logoTarget.webp'
 import logoWalmart from '@/images/retailers/traditional/logoWalmart.webp'
 import logoAmazon from '@/images/retailers/digital/logoAmazon.webp'
@@ -43,6 +45,8 @@ const traditionalRetailers = [
   [`Sam's Club`, logoSamsClub],
   ['Meijer', logoMeijer],
   ['Costco', logoCostco],
+  ['Hannaford', logoHannaford],
+  ['Albertsons', logoAlbertsons],
 ]
 
 const digitalRetailers = [
