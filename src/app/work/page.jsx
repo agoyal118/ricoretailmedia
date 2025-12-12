@@ -11,7 +11,11 @@ import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
 import logoDude from '@/images/clients/logoDudeBlack.jpg'
 import logoHBD from '@/images/clients/logoHBDTransparent.png'
-import logoRhone from '@/images/clients/logoRhoneBlack.png'
+import logoBark from '@/images/clients/logoBarkLight.png'
+import logoHoneyPot from '@/images/clients/logoHoneyPotLight.svg'
+import logoPlantTherapy from '@/images/clients/logoPlantTherapyLight.png'
+import logoPourri from '@/images/clients/logoPourriLight.jpeg'
+import logoSaltStick from '@/images/clients/logoSaltStickLight.webp'
 import logoFillos from '@/images/clients/logoFillos.svg'
 import logoFDC from '@/images/clients/logoFDCDark.webp'
 import logoAN from '@/images/clients/logoANDark.png'
@@ -91,7 +95,11 @@ function CaseStudies({ caseStudies }) {
 
 const clients = [
   ['DudeWipes', logoDude],
-  ['Rhone', logoRhone],
+  ['Bark', logoBark],
+  ['Honey Pot', logoHoneyPot],
+  ['Plant Therapy', logoPlantTherapy],
+  ['Pourri', logoPourri],
+  ['Salt Stick', logoSaltStick],
   ['Hustle Butter', logoHBD],
   [`Fillo's`, logoFillos],
   ['Fire Department Coffee', logoFDC],
@@ -110,7 +118,7 @@ function Clients() {
         <Border as={FadeIn} />
         <ul
           role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-3"
+          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-5"
         >
           {clients.map(([client, logo]) => (
             <li key={client} className="group">

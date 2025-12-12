@@ -11,7 +11,11 @@ import { Testimonial } from '@/components/Testimonial'
 import imageAmazon from '@/images/homeAmazon.webp'
 import logoDude from '@/images/clients/logoDudeWhite.webp'
 import logoHBD from '@/images/clients/logoHBDTransparent.png'
-import logoRhone from '@/images/clients/logoRhoneWhite.png'
+import logoBark from '@/images/clients/logoBarkDark.png'
+import logoHoneyPot from '@/images/clients/logoHoneyPotDark.png'
+import logoPlantTherapy from '@/images/clients/logoPlantTherapyDark.png'
+import logoPourri from '@/images/clients/logoPourriDark.png'
+import logoSaltStick from '@/images/clients/logoSaltStickDark.png'
 import logoFillos from '@/images/clients/logoFillos.svg'
 import logoFDC from '@/images/clients/logoFDCDark.webp'
 import logoAN from '@/images/clients/logoANWhite.png'
@@ -31,11 +35,15 @@ import logoTiktok from '@/images/retailers/digital/logoTiktokTrans.png'
 
 const clients = [
   ['DudeWipes', logoDude],
-  ['Rhone', logoRhone],
   ['Hustle Butter', logoHBD],
   [`Fillo's`, logoFillos],
   ['Fire Department Coffee', logoFDC],
   ['Absolutely Natural', logoAN],
+  ['Bark', logoBark],
+  ['Honey Pot', logoHoneyPot],
+  ['Plant Therapy', logoPlantTherapy],
+  ['Pourri', logoPourri],
+  ['Salt Stick', logoSaltStick],
 ]
 
 const traditionalRetailers = [
@@ -69,7 +77,7 @@ function Clients() {
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-3"
+            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-5"
           >
             {clients.map(([client, logo]) => (
               <li key={client}>
