@@ -14,11 +14,10 @@ import logoHBD from '@/images/clients/logoHBDTransparent.png'
 import logoBark from '@/images/clients/logoBarkDark.png'
 import logoHoneyPot from '@/images/clients/logoHoneyPotDark.png'
 import logoPlantTherapy from '@/images/clients/logoPlantTherapyDark.png'
-import logoPourri from '@/images/clients/logoPourriDark.png'
 import logoSaltStick from '@/images/clients/logoSaltStickDark.png'
 import logoFillos from '@/images/clients/logoFillos.svg'
-import logoFDC from '@/images/clients/logoFDCDark.webp'
 import logoAN from '@/images/clients/logoANWhite.png'
+import logoRottenWhite from '@/images/clients/rotten-logo-white.png'
 import { loadCaseStudies } from '@/lib/mdx'
 import logoCostco from '@/images/retailers/traditional/logoCostcoTrans.png'
 import logoKroger from '@/images/retailers/traditional/logoKroger.webp'
@@ -37,13 +36,12 @@ const clients = [
   ['DudeWipes', logoDude],
   ['Hustle Butter', logoHBD],
   [`Fillo's`, logoFillos],
-  ['Fire Department Coffee', logoFDC],
   ['Absolutely Natural', logoAN],
   ['Bark', logoBark],
   ['Honey Pot', logoHoneyPot],
   ['Plant Therapy', logoPlantTherapy],
-  ['Pourri', logoPourri],
   ['Salt Stick', logoSaltStick],
+  ['Rotten Candy', logoRottenWhite],
 ]
 
 const traditionalRetailers = [

@@ -14,11 +14,10 @@ import logoHBD from '@/images/clients/logoHBDTransparent.png'
 import logoBark from '@/images/clients/logoBarkLight.png'
 import logoHoneyPot from '@/images/clients/logoHoneyPotLight.svg'
 import logoPlantTherapy from '@/images/clients/logoPlantTherapyLight.png'
-import logoPourri from '@/images/clients/logoPourriLight.jpeg'
 import logoSaltStick from '@/images/clients/logoSaltStickLight.webp'
 import logoFillos from '@/images/clients/logoFillos.svg'
-import logoFDC from '@/images/clients/logoFDCDark.webp'
 import logoAN from '@/images/clients/logoANDark.png'
+import logoRottenLight from '@/images/clients/rotten-logo.png'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 
@@ -98,12 +97,11 @@ const clients = [
   ['Bark', logoBark],
   ['Honey Pot', logoHoneyPot],
   ['Plant Therapy', logoPlantTherapy],
-  ['Pourri', logoPourri],
   ['Salt Stick', logoSaltStick],
   ['Hustle Butter', logoHBD],
   [`Fillo's`, logoFillos],
-  ['Fire Department Coffee', logoFDC],
   ['Absolutely Natural', logoAN],
+  ['Rotten Candy', logoRottenLight],
 ]
 
 function Clients() {
