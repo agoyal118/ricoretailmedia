@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
@@ -27,18 +25,6 @@ const services = [
       'ACOS / TACOS target management',
       'Product targeting & category targeting',
       'New product launch PPC strategy',
-    ],
-  },
-  {
-    title: 'Amazon DSP (Demand-Side Platform)',
-    body: 'Programmatic display and video advertising on and off Amazon to drive awareness, retarget shoppers, and capture demand at every stage of the funnel.',
-    bullets: [
-      'Audience creation & segmentation',
-      'Retargeting past visitors & purchasers',
-      'Competitor conquesting audiences',
-      'Lifestyle & in-market audience targeting',
-      'Amazon OTT / streaming TV ads',
-      'Cross-channel attribution reporting',
     ],
   },
   {
@@ -130,7 +116,7 @@ const services = [
   },
   {
     title: 'International Expansion',
-    body: "Launch and manage your products across Amazon's global marketplaces — including Canada, UK, EU, and beyond.",
+    body: 'Launch and manage your products across international Amazon stores — North America, UK, EU, and beyond — with localized listings, FBA, and advertising.',
     bullets: [
       'Marketplace assessment & entry strategy',
       'Listing translation & localization',
@@ -191,17 +177,6 @@ const services = [
     ],
   },
   {
-    title: 'Amazon Posts & Brand Content',
-    body: 'Social-style content published directly on Amazon to drive discovery, engagement, and follower growth for your brand.',
-    bullets: [
-      'Amazon Posts content calendar',
-      'Lifestyle imagery creation',
-      'Brand Follow growth strategy',
-      'Manage Your Experiments (A/B testing)',
-      'Amazon Live strategy (where applicable)',
-    ],
-  },
-  {
     title: 'External Traffic & Attribution',
     body: 'Drive qualified off-Amazon traffic to your listings using Amazon Attribution to measure and optimize external marketing efforts.',
     bullets: [
@@ -242,19 +217,19 @@ const metrics = [
   { num: '$4.2M+', label: 'Amazon revenue managed annually' },
   { num: '6.8x', label: 'Average ROAS across clients' },
   { num: '140%', label: 'Average YoY revenue growth' },
-  { num: '5', label: 'Amazon marketplaces managed' },
+  { num: '4', label: 'International Amazon storefronts managed' },
 ]
 
 const testimonials = [
   {
     quote:
-      "Rico Retail came in when our Amazon business had really hit a wall. They helped us rebuild everything, from our ads to our listings, and even guided us through Transparency and launching in Canada.\n\nWithin a year, we more than doubled our revenue and our ACOS finally started improving. What I really like is how hands-on they are. It doesn't feel like working with an agency, it feels like they're part of our team.",
+      "Rico Retail came in when our Amazon business had really hit a wall. They helped us rebuild everything, from our ads to our listings, and even guided us through Transparency and launching in Canada.\n\nWhat I really like is how hands-on they are. It doesn't feel like working with an agency, it feels like they're part of our team.",
     author: 'Jason Stone',
-    role: 'Founder & CEO, Hustle Butter Deluxe',
+    role: 'Managing Partner, Hustle Butter Deluxe',
   },
   {
     quote:
-      'We needed a team that could treat Amazon as a growth channel, not a spreadsheet. Rico Retail cleaned up our catalog for organic search, built a real external traffic plan with Amazon Attribution, and helped us win page-one visibility on the keywords that actually move units. Organic demand climbed, our line is better represented across the store, and the Brand Referral Bonus work has turned into one of our best levers. For the first time our Amazon strategy feels proactive instead of reactive.',
+      'We needed a team that could treat Amazon as a growth channel, not a spreadsheet. Rico Retail cleaned up our catalog for organic search. For the first time our Amazon strategy feels proactive instead of reactive.',
     author: 'Daniel Richards',
     role: 'President, Absolutely Natural',
   },
@@ -266,37 +241,23 @@ const caseStudies = [
     title: 'Hustle Butter Deluxe — Scaling a Tattoo Aftercare Brand on Amazon US & Canada',
     paragraphs: [
       'Hustle Butter Deluxe came to us managing their own Amazon advertising with limited PPC experience. We restructured their entire ad account, optimized all product listings with keyword-rich copy and new A+ Content, enrolled the brand in Amazon Transparency to combat counterfeits, and expanded operations into Amazon Canada.',
-      'We manage weekly performance reporting across all SKUs (5oz, 1oz, Bubbles, 2 Packs, Tattoo Lotion, Stick, Wraps, Mini Kit, Sunscreen, Sunscreen Stick), monitor inventory health, coordinate FBA shipments including FNSKU labeling, and run seasonal promotional campaigns around Prime Day, Black Friday, and key tattoo-industry events.',
+      'We manage weekly performance reporting, monitor inventory health, coordinate FBA shipments including FNSKU labeling, and run seasonal promotional campaigns around Prime Day, Black Friday, and key tattoo-industry events.',
     ],
     stats: [
-      { val: '215%', desc: 'Revenue increase in first 12 months' },
-      { val: '22% → 11%', desc: 'ACOS reduction' },
+      { val: '#1 in Category', desc: 'Best seller in Tattoo Aftercare Products' },
       { val: '$0 → $380K', desc: 'Amazon Canada annual revenue' },
       { val: '14 SKUs', desc: 'Actively managed & optimized' },
-    ],
-  },
-  {
-    label: 'E-Commerce — Baby & Personal Care',
-    title: 'ZOEY Naturals — Listing Optimization & Review Growth Strategy',
-    paragraphs: [
-      'ZOEY Naturals needed a complete overhaul of their Amazon product listings to compete in the crowded baby care category. We rewrote all titles and bullet points with SEO-driven copy, added FSA/HSA eligibility language where applicable, built A+ Content modules, and implemented a review request automation strategy that doubled their monthly review velocity.',
-    ],
-    stats: [
-      { val: '92%', desc: 'Increase in organic impressions' },
-      { val: '2.4x', desc: 'Review velocity improvement' },
-      { val: '18%', desc: 'Conversion rate lift' },
     ],
   },
   {
     label: 'E-Commerce — Natural Skincare',
     title: 'Absolutely Natural — Amazon SEO & Catalog Expansion',
     paragraphs: [
-      'We partnered with Absolutely Natural to optimize their Amazon catalog for organic search visibility, implement a backlink and external traffic strategy through Amazon Attribution, and expand their product line presence on the platform. Ongoing management includes keyword rank tracking, competitive analysis, and Google Shopping review syndication.',
+      'We partnered with Absolutely Natural to optimize their Amazon catalog for organic search visibility and expand their product line presence on the platform. Ongoing management includes keyword rank tracking and competitive analysis.',
     ],
     stats: [
       { val: 'Page 1', desc: 'Rankings for 12+ primary keywords' },
       { val: '67%', desc: 'Organic traffic increase' },
-      { val: '3.1x', desc: 'Brand Referral Bonus ROI' },
     ],
   },
 ]
@@ -332,7 +293,6 @@ const platforms = [
   'Amazon Seller Central',
   'Amazon Vendor Central',
   'Amazon Advertising Console',
-  'Amazon DSP',
   'Amazon Brand Registry',
   'Amazon Transparency',
   'Amazon Attribution',
@@ -342,7 +302,6 @@ const platforms = [
   'Keepa',
   'DataDive',
   'Brand Analytics',
-  'Amazon Posts',
   'Manage Your Experiments',
   'FBA Revenue Calculator',
 ]
@@ -554,16 +513,8 @@ export default function AmazonServicesPage() {
             seven-figure catalog, we&apos;ll build a custom strategy to grow your
             Amazon business profitably.
           </p>
-          <div className="mt-10 flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
-            <Button href="mailto:rico@ricoretailmedia.com?subject=Free%20Amazon%20Audit">
-              Get a free Amazon audit
-            </Button>
-            <Link
-              href="/contact"
-              className="text-sm font-semibold text-neutral-950 transition hover:text-neutral-600"
-            >
-              Contact form <span aria-hidden="true">→</span>
-            </Link>
+          <div className="mt-10 flex justify-center">
+            <Button href="/contact">Get a free Amazon audit</Button>
           </div>
         </FadeIn>
       </Container>
