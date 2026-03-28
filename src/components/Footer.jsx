@@ -26,7 +26,7 @@ const navigation = [
   {
     title: 'Company',
     links: [
-      { title: 'Home', href: '/' },
+      { title: 'Amazon', href: '/amazon' },
       { title: 'Case Studies', href: '/work' },
       { title: 'About Rico Retail', href: '/about' },
       { title: 'Contact us', href: '/contact' },
@@ -125,8 +125,6 @@ export function Footer() {
           <Link
             href="/"
             aria-label="Home"
-            onMouseEnter={() => setLogoHovered(true)}
-            onMouseLeave={() => setLogoHovered(false)}
             className="flex items-center justify-between"
           >
             <Image src={rrm_logo} alt="RRM Logo" className="h-12 w-12" />
