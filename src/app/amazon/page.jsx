@@ -248,15 +248,15 @@ const metrics = [
 const testimonials = [
   {
     quote:
-      "Rico Retail completely transformed our Amazon business. They took over our ad campaigns and within 90 days we saw a 3x increase in revenue while cutting our ACOS nearly in half. They understand the platform at a level that's hard to find — we trust them with everything.",
+      "Rico Retail came in when our Amazon business had really hit a wall. They helped us rebuild everything, from our ads to our listings, and even guided us through Transparency and launching in Canada.\n\nWithin a year, we more than doubled our revenue and our ACOS finally started improving. What I really like is how hands-on they are. It doesn't feel like working with an agency, it feels like they're part of our team.",
     author: 'Jason Stone',
     role: 'Founder & CEO, Hustle Butter Deluxe',
   },
   {
     quote:
-      "We came to Rico Retail with a product that was barely selling on Amazon. They rebuilt our listings from the ground up, launched a PPC strategy that actually made sense, and handled our expansion into Amazon Canada. We went from maybe 50 units a month to consistently moving 800+. They're the real deal.",
-    author: 'Danny Lehr',
-    role: 'Co-Founder, Hustle Butter Deluxe',
+      'We needed a team that could treat Amazon as a growth channel, not a spreadsheet. Rico Retail cleaned up our catalog for organic search, built a real external traffic plan with Amazon Attribution, and helped us win page-one visibility on the keywords that actually move units. Organic demand climbed, our line is better represented across the store, and the Brand Referral Bonus work has turned into one of our best levers. For the first time our Amazon strategy feels proactive instead of reactive.',
+    author: 'Daniel Richards',
+    role: 'President, Absolutely Natural',
   },
 ]
 
@@ -446,7 +446,7 @@ export default function AmazonServicesPage() {
               <FadeIn key={t.author}>
                 <figure>
                   <blockquote className="font-display text-2xl font-medium tracking-tight text-white [text-wrap:balance] sm:text-3xl">
-                    <p className="before:content-['“'] after:content-['”']">
+                    <p className="whitespace-pre-line before:content-['“'] after:content-['”']">
                       {t.quote}
                     </p>
                   </blockquote>
