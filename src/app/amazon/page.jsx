@@ -214,7 +214,7 @@ const processSteps = [
 ]
 
 const metrics = [
-  { num: '$4.2M+', label: 'Amazon revenue managed annually' },
+  { num: '$30MM+', label: 'Amazon revenue managed annually' },
   { num: '6.8x', label: 'Average ROAS across clients' },
   { num: '140%', label: 'Average YoY revenue growth' },
   { num: '4', label: 'International Amazon storefronts managed' },
