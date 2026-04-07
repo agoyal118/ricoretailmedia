@@ -8,7 +8,7 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import imageAmazon from '@/images/homeAmazon.webp'
+import imageServicesHero from '@/images/homeServices.jpg'
 import logoDude from '@/images/clients/logoDudeWhite.webp'
 import logoHBD from '@/images/clients/logoHBDTransparent.png'
 import logoBark from '@/images/clients/logoBarkDark.png'
@@ -211,7 +211,8 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageAmazon}
+                src={imageServicesHero}
+                alt="Laptop showing charts, metrics, and dashboard-style performance data"
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />

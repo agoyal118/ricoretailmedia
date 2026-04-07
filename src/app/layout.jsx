@@ -7,6 +7,10 @@ export const metadata = {
     template: '%s - Rico Retail',
     default: 'Rico Retail - Retail Media powerhouse based in Miami',
   },
+  icons: {
+    icon: [{ url: '/favicon.png', type: 'image/png' }],
+    apple: '/favicon.png',
+  },
 }
 
 export default function Layout({ children }) {

@@ -241,7 +241,7 @@ function RootLayoutInner({ children }) {
             interactive
           />
 
-          <main className="w-full flex-auto">{children}</main>
+          <main className="w-full min-w-0 flex-auto">{children}</main>
 
           <Footer />
         </motion.div>
